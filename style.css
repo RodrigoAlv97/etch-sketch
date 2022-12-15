@@ -1,0 +1,151 @@
+:root {
+  --blue: #4668ff;
+  color: #fff;
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*-------Header-------*/
+
+#header {
+  background-color: var(--blue);
+  height: 10vh;
+  font-size: 3.5em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5em;
+}
+
+/*-------Header-------*/
+
+/*-------Main-------*/
+
+#main {
+  background-color: #dae5ff;
+  height: 85vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+#tools {
+  height: 70vh;
+  width: 30vh;
+  background-color: var(--blue);
+  border-radius: 1em;
+  display: grid;
+  justify-content: center;
+}
+
+.tool {
+  height: 3.5vh;
+  width: 6vw;
+  font-size: 1.2em;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  color: #ffffff;
+  background-color: var(--blue);
+  border: 1px #ffffffa6 solid;
+  border-radius: 0.3em;
+}
+
+.tool.active,
+.tool:hover {
+  background-color: #748eff;
+  border: #ffffff solid 1px;
+  cursor: pointer;
+}
+
+#buttons,
+#color-container,
+#scale-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#scale-range {
+  accent-color: #ffffff;
+  width: 8em;
+}
+
+#color-container div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#color-picker {
+  padding: 0;
+  height: 70px;
+  width: 70px;
+  opacity: 0;
+}
+
+#color-picker:hover,
+#scale-range:hover {
+  cursor: pointer;
+}
+
+#color {
+  border-radius: 50%;
+}
+
+#selectors {
+  font-size: 1.3em;
+}
+
+#grid-container {
+  display: grid;
+  height: 60vh;
+  width: 60vh;
+  background-color: #ffffff;
+}
+
+#frame {
+  height: 60vh;
+  width: 60vh;
+  border: 0.3em #4668ff31 solid;
+  border-radius: 0.3em;
+  box-shadow: 60px, 100px, 100px black;
+}
+
+.grid-item {
+  border: 1px solid #4668ff31;
+  flex: 1;
+}
+
+/*-------Main-------*/
+
+/*-------Footer-------*/
+
+#footer {
+  background-color: var(--blue);
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+  color: #ffffff;
+}
+
+.link {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+.link:hover {
+  color: #ffffff;
+}
+
+/*-------Footer-------*/

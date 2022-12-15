@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>etch-sketch</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">ETCH-SKETCH</div>
+
+      <div id="main">
+        <div id="tools">
+          <div id="buttons">
+            <button class="tool active" id="pencil">Pencil</button>
+            <button class="tool" id="eraser">Eraser</button>
+            <button class="tool" id="rainbow">Rainbow</button>
+            <button class="tool" id="clear">Clear</button>
+          </div>
+
+          <div id="selectors">
+            <div id="color-container">
+              <div>Color</div>
+              <div id="color">
+                <input id="color-picker" type="color" />
+              </div>
+
+              <div id="scale-container">
+                <div>Scale</div>
+                <input
+                  id="scale-range"
+                  type="range"
+                  min="16"
+                  max="64"
+                  value="16"
+                  step="1"
+                />
+                <div id="show-scale"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="frame">
+          <div id="grid-container"></div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <a class="link" href="https://github.com/RodrigoAlv97/etch-sketch" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
